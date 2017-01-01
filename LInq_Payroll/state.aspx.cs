@@ -88,6 +88,7 @@ namespace LInq_Payroll
                     db.SubmitChanges();
                     btnSubmit.Text = "Submit";
                     txtCountryName.Text = "";
+                    ddlCountry.SelectedIndex = 0;
                 }
             }
             BindSates();

@@ -107,6 +107,7 @@
     <Content Include="cdn.rawgit.com\bpampuch\pdfmake\0.1.18\build\vfs_fonts.js" />
     <Content Include="cdn.rawgit.com\google\code-prettify\master\loader\run_prettifyaf02.js" />
     <Content Include="cdnjs.cloudflare.com\ajax\libs\jszip\2.5.0\jszip.min.js" />
+    <Content Include="city_manage.aspx" />
     <Content Include="country.aspx" />
     <Content Include="css\animate.css" />
     <Content Include="css\colors\blue.css" />
@@ -492,6 +493,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="city_manage.aspx.cs">
+      <DependentUpon>city_manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="city_manage.aspx.designer.cs">
+      <DependentUpon>city_manage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="country.aspx.cs">
       <DependentUpon>country.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
