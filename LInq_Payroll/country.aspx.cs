@@ -12,9 +12,16 @@ namespace LInq_Payroll
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                BindRepeater();
+                if (!IsPostBack)
+                {
+                    BindRepeater();
+                }
+            }
+            catch (Exception)
+            {
+                Response.Write("<script>alert('Oops Soomething went wrong.')</script>");
             }
         }
 
@@ -28,9 +35,9 @@ namespace LInq_Payroll
                 repData.DataSource = rr;
                 repData.DataBind();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Response.Write("OOps something went wrong.");
+                Response.Write("<script>alert('Oops Soomething went wrong.')</script>");
             }
         }
 
@@ -58,9 +65,9 @@ namespace LInq_Payroll
                 txtCountryName.Text = "";
                 BindRepeater();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Response.Write("OOps something went wrong.");
+                Response.Write("<script>alert('Oops Soomething went wrong.')</script>");
             }
         }
 
@@ -91,9 +98,9 @@ namespace LInq_Payroll
                     BindRepeater();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Response.Write("OOps something went wrong.");
+                Response.Write("<script>alert('Oops Soomething went wrong.')</script>");
             }
         }
     }
