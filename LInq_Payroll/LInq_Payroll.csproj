@@ -76,6 +76,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,11 +95,127 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="cdn.datatables.net\buttons\1.2.2\css\buttons.dataTables.min.css" />
+    <Content Include="cdn.datatables.net\buttons\1.2.2\js\buttons.flash.min.js" />
+    <Content Include="cdn.datatables.net\buttons\1.2.2\js\buttons.html5.min.js" />
+    <Content Include="cdn.datatables.net\buttons\1.2.2\js\buttons.print.min.js" />
+    <Content Include="cdn.datatables.net\buttons\1.2.2\js\dataTables.buttons.min.js" />
+    <Content Include="cdn.rawgit.com\bpampuch\pdfmake\0.1.18\build\pdfmake.min.js" />
+    <Content Include="cdn.rawgit.com\bpampuch\pdfmake\0.1.18\build\vfs_fonts.js" />
+    <Content Include="cdn.rawgit.com\google\code-prettify\master\loader\run_prettifyaf02.js" />
+    <Content Include="cdnjs.cloudflare.com\ajax\libs\jszip\2.5.0\jszip.min.js" />
+    <Content Include="company.aspx" />
+    <Content Include="country.aspx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\colors\blue.css" />
+    <Content Include="css\colors\default.css" />
+    <Content Include="css\spinners.css" />
+    <Content Include="css\style.css" />
+    <Content Include="js\cbpFWTabs.js" />
+    <Content Include="js\chat.js" />
+    <Content Include="js\custom.min.js" />
+    <Content Include="js\dashboard1.js" />
+    <Content Include="js\dashboard2.js" />
+    <Content Include="js\dashboard3.js" />
+    <Content Include="js\dashboard4.js" />
+    <Content Include="js\flot-data.js" />
+    <Content Include="js\footable-init.js" />
+    <Content Include="js\jasny-bootstrap.js" />
+    <Content Include="js\jquery.PrintArea.js" />
+    <Content Include="js\jquery.slimscroll.js" />
+    <Content Include="js\jsgrid-init.js" />
+    <Content Include="js\mask.js" />
+    <Content Include="js\morris-data.js" />
+    <Content Include="js\toastr.js" />
+    <Content Include="js\validator.js" />
+    <Content Include="js\waves.js" />
+    <Content Include="js\widget.js" />
+    <Content Include="less\icons\font-awesome\fonts\fontawesome-webfont3295.svg" />
+    <Content Include="less\icons\linea-icons\fonts\linea-arrows-10.svg" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-10.svg" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-elaboration-10.svg" />
+    <Content Include="less\icons\linea-icons\fonts\linea-ecommerce-10.svg" />
+    <Content Include="less\icons\linea-icons\fonts\linea-music-10.svg" />
+    <Content Include="less\icons\linea-icons\fonts\linea-software-10.svg" />
+    <Content Include="less\icons\linea-icons\fonts\linea-weather-10.svg" />
+    <Content Include="less\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.svg" />
+    <Content Include="less\icons\themify-icons\fonts\themify9f24.svg" />
+    <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.svg" />
     <Content Include="packages.config" />
     <Content Include="master.Master" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="DBPayroll.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DBPayroll.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bootstrap\dist\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="less\icons\font-awesome\fonts\fontawesome-webfont3295.eot" />
+    <Content Include="less\icons\font-awesome\fonts\fontawesome-webfont3295.ttf" />
+    <Content Include="less\icons\font-awesome\fonts\fontawesome-webfont3295.woff" />
+    <Content Include="less\icons\font-awesome\fonts\fontawesome-webfont3295.woff2" />
+    <Content Include="less\icons\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-arrows-10.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-arrows-10.ttf" />
+    <Content Include="less\icons\linea-icons\fonts\linea-arrows-10.woff" />
+    <Content Include="less\icons\linea-icons\fonts\linea-arrows-10d41d.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-10.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-10.ttf" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-10.woff" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-10d41d.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-elaboration-10.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-elaboration-10.ttf" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-elaboration-10.woff" />
+    <Content Include="less\icons\linea-icons\fonts\linea-basic-elaboration-10d41d.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-ecommerce-10.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-ecommerce-10.ttf" />
+    <Content Include="less\icons\linea-icons\fonts\linea-ecommerce-10.woff" />
+    <Content Include="less\icons\linea-icons\fonts\linea-ecommerce-10d41d.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-music-10.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-music-10.ttf" />
+    <Content Include="less\icons\linea-icons\fonts\linea-music-10.woff" />
+    <Content Include="less\icons\linea-icons\fonts\linea-music-10d41d.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-software-10.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-software-10.ttf" />
+    <Content Include="less\icons\linea-icons\fonts\linea-software-10.woff" />
+    <Content Include="less\icons\linea-icons\fonts\linea-software-10d41d.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-weather-10.eot" />
+    <Content Include="less\icons\linea-icons\fonts\linea-weather-10.ttf" />
+    <Content Include="less\icons\linea-icons\fonts\linea-weather-10.woff" />
+    <Content Include="less\icons\linea-icons\fonts\linea-weather-10d41d.eot" />
+    <Content Include="less\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.eot" />
+    <Content Include="less\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.ttf" />
+    <Content Include="less\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.woff" />
+    <Content Include="less\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.woff2" />
+    <Content Include="less\icons\simple-line-icons\fonts\Simple-Line-Iconsd41d.eot" />
+    <Content Include="less\icons\themify-icons\fonts\themify9f24.eot" />
+    <Content Include="less\icons\themify-icons\fonts\themify9f24.ttf" />
+    <Content Include="less\icons\themify-icons\fonts\themify9f24.woff" />
+    <Content Include="less\icons\themify-icons\fonts\themifyd41d.eot" />
+    <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.woff2" />
+    <Content Include="less\icons\weather-icons\font\weathericons-regular-webfontd41d.eot" />
+    <Content Include="www.youtube.com\watch7d1c.html" />
+    <Content Include="plugins\bower_components\footable\css\fonts\footable.eot" />
+    <Content Include="plugins\bower_components\footable\css\fonts\footable.ttf" />
+    <Content Include="plugins\bower_components\footable\css\fonts\footable.woff" />
+    <Content Include="plugins\bower_components\footable\css\fonts\footabled41d.eot" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\dist\jquery-asColorPicker.min.e7.delaye" />
+    <Content Include="plugins\bower_components\jquery-wizard-master\libs\formvalidation\formValidation.min.ee.dela" />
+    <Content Include="plugins\bower_components\jquery-wizard-master\libs\formvalidation\formValidation.min.ef.dela" />
+    <Content Include="plugins\bower_components\x-editable\dist\bootstrap3-editable\css\bootstrap-editable.f5.delay" />
+    <Content Include="plugins\bower_components\x-editable\dist\bootstrap3-editable\js\bootstrap-editable.min.f6.de" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -108,9 +225,292 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
+    <Content Include="plugins\bower_components\blockUI\jquery.blockUI.js" />
+    <Content Include="plugins\bower_components\bootstrap-datepicker\bootstrap-datepicker.min.css" />
+    <Content Include="plugins\bower_components\bootstrap-datepicker\bootstrap-datepicker.min.js" />
+    <Content Include="plugins\bower_components\bootstrap-daterangepicker\daterangepicker.css" />
+    <Content Include="plugins\bower_components\bootstrap-daterangepicker\daterangepicker.js" />
+    <Content Include="plugins\bower_components\bootstrap-select\bootstrap-select.min.css" />
+    <Content Include="plugins\bower_components\bootstrap-select\bootstrap-select.min.js" />
+    <Content Include="plugins\bower_components\bootstrap-table\dist\bootstrap-table.ints.js" />
+    <Content Include="plugins\bower_components\bootstrap-table\dist\bootstrap-table.min.css" />
+    <Content Include="plugins\bower_components\bootstrap-table\dist\bootstrap-table.min.js" />
+    <Content Include="plugins\bower_components\bootstrap-tagsinput\dist\bootstrap-tagsinput.css" />
+    <Content Include="plugins\bower_components\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js" />
+    <Content Include="plugins\bower_components\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.min.css" />
+    <Content Include="plugins\bower_components\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="plugins\bower_components\bootstrap-treeview-master\dist\bootstrap-treeview-init.js" />
+    <Content Include="plugins\bower_components\bootstrap-treeview-master\dist\bootstrap-treeview.min.js" />
+    <Content Include="plugins\bower_components\calendar\dist\fullcalendar.css" />
+    <Content Include="plugins\bower_components\calendar\dist\fullcalendar.min.js" />
+    <Content Include="plugins\bower_components\calendar\dist\jquery.fullcalendar.js" />
+    <Content Include="plugins\bower_components\calendar\jquery-ui.min.js" />
+    <Content Include="plugins\bower_components\Chart.js\Chart.min.js" />
+    <Content Include="plugins\bower_components\Chart.js\chartjs.init.js" />
+    <Content Include="plugins\bower_components\clockpicker\dist\jquery-clockpicker.min.css" />
+    <Content Include="plugins\bower_components\clockpicker\dist\jquery-clockpicker.min.js" />
+    <Content Include="plugins\bower_components\counterup\jquery.counterup.min.js" />
+    <Content Include="plugins\bower_components\cropper\cropper-init.js" />
+    <Content Include="plugins\bower_components\cropper\cropper.min.css" />
+    <Content Include="plugins\bower_components\cropper\cropper.min.js" />
+    <Content Include="plugins\bower_components\css-chart\css-chart.css" />
+    <Content Include="plugins\bower_components\custom-select\custom-select.css" />
+    <Content Include="plugins\bower_components\custom-select\custom-select.min.js" />
+    <Content Include="plugins\bower_components\custom-select\select2-spinner.html" />
+    <Content Include="plugins\bower_components\custom-select\select2.png" />
+    <Content Include="plugins\bower_components\custom-select\select2x2.html" />
+    <Content Include="plugins\bower_components\datatables\dataTables.bootstrap.js" />
+    <Content Include="plugins\bower_components\datatables\jquery.dataTables.min.css" />
+    <Content Include="plugins\bower_components\datatables\jquery.dataTables.min.js" />
+    <Content Include="plugins\bower_components\datatables\sort_asc.png" />
+    <Content Include="plugins\bower_components\datatables\sort_asc_disabled.png" />
+    <Content Include="plugins\bower_components\datatables\sort_both.png" />
+    <Content Include="plugins\bower_components\datatables\sort_desc.png" />
+    <Content Include="plugins\bower_components\datatables\sort_desc_disabled.png" />
+    <Content Include="plugins\bower_components\dropify\dist\css\dropify.min.css" />
+    <Content Include="plugins\bower_components\dropify\dist\js\dropify.min.js" />
+    <Content Include="plugins\bower_components\dropify\src\images\test-image-1.jpg" />
+    <Content Include="plugins\bower_components\dropify\src\images\test-image-2.jpg" />
+    <Content Include="plugins\bower_components\dropzone-master\dist\dropzone.css" />
+    <Content Include="plugins\bower_components\dropzone-master\dist\dropzone.js" />
+    <Content Include="plugins\bower_components\fancybox\ekko-lightbox.min.css" />
+    <Content Include="plugins\bower_components\fancybox\ekko-lightbox.min.js" />
+    <Content Include="plugins\bower_components\flot.tooltip\js\jquery.flot.tooltip.min.js" />
+    <Content Include="plugins\bower_components\flot\excanvas.min.js" />
+    <Content Include="plugins\bower_components\flot\jquery.flot.crosshair.js" />
+    <Content Include="plugins\bower_components\flot\jquery.flot.js" />
+    <Content Include="plugins\bower_components\flot\jquery.flot.pie.js" />
+    <Content Include="plugins\bower_components\flot\jquery.flot.stack.js" />
+    <Content Include="plugins\bower_components\flot\jquery.flot.time.js" />
+    <Content Include="plugins\bower_components\footable\css\fonts\footable.svg" />
+    <Content Include="plugins\bower_components\footable\css\footable.core.css" />
+    <Content Include="plugins\bower_components\footable\js\footable.all.min.js" />
+    <Content Include="plugins\bower_components\gallery\css\animated-masonry-gallery.css" />
+    <Content Include="plugins\bower_components\gallery\js\animated-masonry-gallery.js" />
+    <Content Include="plugins\bower_components\gallery\js\jquery.isotope.min.js" />
+    <Content Include="plugins\bower_components\gmaps\gmaps.min.js" />
+    <Content Include="plugins\bower_components\gmaps\jquery.gmaps.js" />
+    <Content Include="plugins\bower_components\horizontal-timeline\css\horizontal-timeline.css" />
+    <Content Include="plugins\bower_components\horizontal-timeline\js\horizontal-timeline.js" />
+    <Content Include="plugins\bower_components\html5-editor\bootstrap-wysihtml5.css" />
+    <Content Include="plugins\bower_components\html5-editor\bootstrap-wysihtml5.js" />
+    <Content Include="plugins\bower_components\html5-editor\wysihtml5-0.3.0.js" />
+    <Content Include="plugins\bower_components\ion-rangeslider\css\ion.rangeSlider.css" />
+    <Content Include="plugins\bower_components\ion-rangeslider\css\ion.rangeSlider.skinModern.css" />
+    <Content Include="plugins\bower_components\ion-rangeslider\img\sprite-skin-modern.png" />
+    <Content Include="plugins\bower_components\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider-init.js" />
+    <Content Include="plugins\bower_components\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider.min.js" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\css\asColorPicker.css" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\images\alpha.png" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\images\hue.png" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\images\saturation.png" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\images\transparent.png" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\libs\jquery-asColor.js" />
+    <Content Include="plugins\bower_components\jquery-asColorPicker-master\libs\jquery-asGradient.js" />
+    <Content Include="plugins\bower_components\jquery-datatables-editable\datatables.css" />
+    <Content Include="plugins\bower_components\jquery-datatables-editable\jquery.dataTables.js" />
+    <Content Include="plugins\bower_components\jquery-sparkline\jquery.charts-sparkline.js" />
+    <Content Include="plugins\bower_components\jquery-sparkline\jquery.sparkline.min.js" />
+    <Content Include="plugins\bower_components\jquery-wizard-master\css\wizard.css" />
+    <Content Include="plugins\bower_components\jquery-wizard-master\dist\jquery-wizard.min.js" />
+    <Content Include="plugins\bower_components\jquery-wizard-master\libs\formvalidation\bootstrap.min.js" />
+    <Content Include="plugins\bower_components\jquery.easy-pie-chart\dist\jquery.easypiechart.min.js" />
+    <Content Include="plugins\bower_components\jquery.easy-pie-chart\easy-pie-chart.init.js" />
+    <Content Include="plugins\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="plugins\bower_components\jsgrid\db.js" />
+    <Content Include="plugins\bower_components\jsgrid\dist\jsgrid-theme.min.css" />
+    <Content Include="plugins\bower_components\jsgrid\dist\jsgrid.min.css" />
+    <Content Include="plugins\bower_components\jsgrid\dist\jsgrid.min.js" />
+    <Content Include="plugins\bower_components\knob\jquery.knob.js" />
+    <Content Include="plugins\bower_components\Magnific-Popup-master\dist\jquery.magnific-popup-init.js" />
+    <Content Include="plugins\bower_components\Magnific-Popup-master\dist\jquery.magnific-popup.min.js" />
+    <Content Include="plugins\bower_components\Magnific-Popup-master\dist\magnific-popup.css" />
+    <Content Include="plugins\bower_components\moment\moment.js" />
+    <Content Include="plugins\bower_components\morrisjs\morris.css" />
+    <Content Include="plugins\bower_components\morrisjs\morris.js" />
+    <Content Include="plugins\bower_components\multiselect\css\multi-select.css" />
+    <Content Include="plugins\bower_components\multiselect\img\switch.png" />
+    <Content Include="plugins\bower_components\multiselect\js\jquery.multi-select.js" />
+    <Content Include="plugins\bower_components\nestable\jquery.nestable.js" />
+    <Content Include="plugins\bower_components\nestable\nestable.css" />
+    <Content Include="plugins\bower_components\owl.carousel\owl.carousel.min.css" />
+    <Content Include="plugins\bower_components\owl.carousel\owl.carousel.min.js" />
+    <Content Include="plugins\bower_components\owl.carousel\owl.custom.js" />
+    <Content Include="plugins\bower_components\owl.carousel\owl.theme.default.css" />
+    <Content Include="plugins\bower_components\owl.carousel\owl.video.play.html" />
+    <Content Include="plugins\bower_components\peity\jquery.peity.init.js" />
+    <Content Include="plugins\bower_components\peity\jquery.peity.min.js" />
+    <Content Include="plugins\bower_components\raphael\raphael-min.js" />
+    <Content Include="plugins\bower_components\register-steps\jquery.easing.min.js" />
+    <Content Include="plugins\bower_components\register-steps\register-init.js" />
+    <Content Include="plugins\bower_components\register-steps\steps.css" />
+    <Content Include="plugins\bower_components\sidebar-nav\dist\sidebar-nav.min.css" />
+    <Content Include="plugins\bower_components\sidebar-nav\dist\sidebar-nav.min.js" />
+    <Content Include="plugins\bower_components\skycons\skycons.js" />
+    <Content Include="plugins\bower_components\styleswitcher\jQuery.style.switcher.js" />
+    <Content Include="plugins\bower_components\summernote\dist\summernote.css" />
+    <Content Include="plugins\bower_components\summernote\dist\summernote.min.js" />
+    <Content Include="plugins\bower_components\sweetalert\jquery.sweet-alert.custom.js" />
+    <Content Include="plugins\bower_components\sweetalert\sweetalert.css" />
+    <Content Include="plugins\bower_components\sweetalert\sweetalert.min.js" />
+    <Content Include="plugins\bower_components\switchery\dist\switchery.min.css" />
+    <Content Include="plugins\bower_components\switchery\dist\switchery.min.js" />
+    <Content Include="plugins\bower_components\tablesaw-master\dist\tablesaw-init.js" />
+    <Content Include="plugins\bower_components\tablesaw-master\dist\tablesaw.css" />
+    <Content Include="plugins\bower_components\tablesaw-master\dist\tablesaw.js" />
+    <Content Include="plugins\bower_components\timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="plugins\bower_components\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="plugins\bower_components\tiny-editable\mindmup-editabletable.js" />
+    <Content Include="plugins\bower_components\tiny-editable\numeric-input-example.js" />
+    <Content Include="plugins\bower_components\tinymce\tinymce.min.js" />
+    <Content Include="plugins\bower_components\toast-master\css\jquery.toast.css" />
+    <Content Include="plugins\bower_components\toast-master\js\jquery.toast.js" />
+    <Content Include="plugins\bower_components\typeahead.js-master\dist\typeahead-init.js" />
+    <Content Include="plugins\bower_components\typeahead.js-master\dist\typeahead.bundle.min.js" />
+    <Content Include="plugins\bower_components\typeahead.js-master\dist\typehead-min.css" />
+    <Content Include="plugins\bower_components\vectormap\jquery-jvectormap-2.0.2.css" />
+    <Content Include="plugins\bower_components\vectormap\jquery-jvectormap-2.0.2.min.js" />
+    <Content Include="plugins\bower_components\vectormap\jquery-jvectormap-au-mill.js" />
+    <Content Include="plugins\bower_components\vectormap\jquery-jvectormap-in-mill.js" />
+    <Content Include="plugins\bower_components\vectormap\jquery-jvectormap-uk-mill-en.js" />
+    <Content Include="plugins\bower_components\vectormap\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="plugins\bower_components\vectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="plugins\bower_components\vectormap\jvectormap.custom.js" />
+    <Content Include="plugins\bower_components\waypoints\lib\jquery.waypoints.js" />
+    <Content Include="plugins\bower_components\x-editable\dist\bootstrap3-editable\img\clear.png" />
+    <Content Include="plugins\bower_components\x-editable\dist\bootstrap3-editable\img\loading.gif" />
+    <Content Include="plugins\images\alert.png" />
+    <Content Include="plugins\images\alert2.png" />
+    <Content Include="plugins\images\alert3.png" />
+    <Content Include="plugins\images\alert4.png" />
+    <Content Include="plugins\images\alert5.png" />
+    <Content Include="plugins\images\alert6.png" />
+    <Content Include="plugins\images\alert7.png" />
+    <Content Include="plugins\images\assets\landscape1.jpg" />
+    <Content Include="plugins\images\assets\landscape10.jpg" />
+    <Content Include="plugins\images\assets\landscape11.jpg" />
+    <Content Include="plugins\images\assets\landscape12.jpg" />
+    <Content Include="plugins\images\assets\landscape13.jpg" />
+    <Content Include="plugins\images\assets\landscape14.jpg" />
+    <Content Include="plugins\images\assets\landscape15.jpg" />
+    <Content Include="plugins\images\assets\landscape16.jpg" />
+    <Content Include="plugins\images\assets\landscape17.jpg" />
+    <Content Include="plugins\images\assets\landscape18.jpg" />
+    <Content Include="plugins\images\assets\landscape2.jpg" />
+    <Content Include="plugins\images\assets\landscape3.jpg" />
+    <Content Include="plugins\images\assets\landscape4.jpg" />
+    <Content Include="plugins\images\assets\landscape5.jpg" />
+    <Content Include="plugins\images\assets\landscape6.jpg" />
+    <Content Include="plugins\images\assets\landscape7.jpg" />
+    <Content Include="plugins\images\assets\landscape8.jpg" />
+    <Content Include="plugins\images\assets\landscape9.jpg" />
+    <Content Include="plugins\images\assets\studio1.jpg" />
+    <Content Include="plugins\images\assets\studio10.jpg" />
+    <Content Include="plugins\images\assets\studio11.jpg" />
+    <Content Include="plugins\images\assets\studio12.jpg" />
+    <Content Include="plugins\images\assets\studio13.jpg" />
+    <Content Include="plugins\images\assets\studio14.jpg" />
+    <Content Include="plugins\images\assets\studio15.jpg" />
+    <Content Include="plugins\images\assets\studio16.jpg" />
+    <Content Include="plugins\images\assets\studio17.jpg" />
+    <Content Include="plugins\images\assets\studio18.jpg" />
+    <Content Include="plugins\images\assets\studio19.jpg" />
+    <Content Include="plugins\images\assets\studio2.jpg" />
+    <Content Include="plugins\images\assets\studio20.jpg" />
+    <Content Include="plugins\images\assets\studio21.jpg" />
+    <Content Include="plugins\images\assets\studio22.jpg" />
+    <Content Include="plugins\images\assets\studio23.jpg" />
+    <Content Include="plugins\images\assets\studio24.jpg" />
+    <Content Include="plugins\images\assets\studio25.jpg" />
+    <Content Include="plugins\images\assets\studio26.jpg" />
+    <Content Include="plugins\images\assets\studio27.jpg" />
+    <Content Include="plugins\images\assets\studio3.jpg" />
+    <Content Include="plugins\images\assets\studio4.jpg" />
+    <Content Include="plugins\images\assets\studio5.jpg" />
+    <Content Include="plugins\images\assets\studio6.jpg" />
+    <Content Include="plugins\images\assets\studio7.jpg" />
+    <Content Include="plugins\images\assets\studio8.jpg" />
+    <Content Include="plugins\images\assets\studio9.jpg" />
+    <Content Include="plugins\images\big\circle.jpg" />
+    <Content Include="plugins\images\big\img1.jpg" />
+    <Content Include="plugins\images\big\img2.jpg" />
+    <Content Include="plugins\images\big\img3.jpg" />
+    <Content Include="plugins\images\big\img4.jpg" />
+    <Content Include="plugins\images\big\img5.jpg" />
+    <Content Include="plugins\images\big\img6.jpg" />
+    <Content Include="plugins\images\docs\sidebar.jpg" />
+    <Content Include="plugins\images\docs\template-structure.jpg" />
+    <Content Include="plugins\images\eliteadmin-logo-dark.png" />
+    <Content Include="plugins\images\eliteadmin-logo.png" />
+    <Content Include="plugins\images\eliteadmin-text-dark.png" />
+    <Content Include="plugins\images\eliteadmin-text.png" />
+    <Content Include="plugins\images\error-bg.jpg" />
+    <Content Include="plugins\images\favicon.png" />
+    <Content Include="plugins\images\folder-structure1.jpg" />
+    <Content Include="plugins\images\folder-structure2.jpg" />
+    <Content Include="plugins\images\heading-bg\slide1.jpg" />
+    <Content Include="plugins\images\heading-bg\slide2.jpg" />
+    <Content Include="plugins\images\heading-bg\slide3.jpg" />
+    <Content Include="plugins\images\heading-bg\slide4.jpg" />
+    <Content Include="plugins\images\heading-bg\slide6.jpg" />
+    <Content Include="plugins\images\img1.jpg" />
+    <Content Include="plugins\images\img2.jpg" />
+    <Content Include="plugins\images\img3.jpg" />
+    <Content Include="plugins\images\large\img1.jpg" />
+    <Content Include="plugins\images\large\img2.jpg" />
+    <Content Include="plugins\images\large\img3.jpg" />
+    <Content Include="plugins\images\large\img4.jpg" />
+    <Content Include="plugins\images\large\img5.jpg" />
+    <Content Include="plugins\images\large\img6.jpg" />
+    <Content Include="plugins\images\login-register.jpg" />
+    <Content Include="plugins\images\model.png" />
+    <Content Include="plugins\images\model2.png" />
+    <Content Include="plugins\images\model3.png" />
+    <Content Include="plugins\images\news\slide1.jpg" />
+    <Content Include="plugins\images\tooltip\Euclid.png" />
+    <Content Include="plugins\images\users\1.jpg" />
+    <Content Include="plugins\images\users\2.jpg" />
+    <Content Include="plugins\images\users\3.jpg" />
+    <Content Include="plugins\images\users\4.jpg" />
+    <Content Include="plugins\images\users\5.jpg" />
+    <Content Include="plugins\images\users\6.jpg" />
+    <Content Include="plugins\images\users\7.jpg" />
+    <Content Include="plugins\images\users\8.jpg" />
+    <Content Include="plugins\images\users\arijit.jpg" />
+    <Content Include="plugins\images\users\genu.jpg" />
+    <Content Include="plugins\images\users\govinda.jpg" />
+    <Content Include="plugins\images\users\hritik.jpg" />
+    <Content Include="plugins\images\users\john.jpg" />
+    <Content Include="plugins\images\users\pawandeep.jpg" />
+    <Content Include="plugins\images\users\ritesh.jpg" />
+    <Content Include="plugins\images\users\salman.jpg" />
+    <Content Include="plugins\images\users\sonu.jpg" />
+    <Content Include="plugins\images\users\varun.jpg" />
+    <Content Include="usercontrols\footer.ascx" />
+    <Content Include="usercontrols\header.ascx" />
+    <Content Include="usercontrols\sidebar.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="company.aspx.cs">
+      <DependentUpon>company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company.aspx.designer.cs">
+      <DependentUpon>company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="country.aspx.cs">
+      <DependentUpon>country.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="country.aspx.designer.cs">
+      <DependentUpon>country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBPayroll.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPayroll.dbml</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,13 +526,36 @@
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usercontrols\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\sidebar.ascx.cs">
+      <DependentUpon>sidebar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\sidebar.ascx.designer.cs">
+      <DependentUpon>sidebar.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Folder Include="frontend\" />
-    <Folder Include="landing\" />
-    <Folder Include="responsive-email\" />
-    <Folder Include="_http_\" />
+    <None Include="DBPayroll.dbml.layout">
+      <DependentUpon>DBPayroll.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -13,6 +13,15 @@ namespace LInq_Payroll {
     public partial class master {
         
         /// <summary>
+        /// theme control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlLink theme;
+        
+        /// <summary>
         /// head control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,24 @@ namespace LInq_Payroll {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
+        /// header control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::LInq_Payroll.usercontrols.header header;
+        
+        /// <summary>
+        /// sidebar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::LInq_Payroll.usercontrols.sidebar sidebar;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

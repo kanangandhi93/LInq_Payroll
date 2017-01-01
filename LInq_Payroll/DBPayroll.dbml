@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Payroll" Class="DBPayrollDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-PPUAUTB;Initial Catalog=Payroll;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PayrollConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_Act_Att" Member="tbl_Act_Atts">
+    <Type Name="tbl_Act_Att">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="[1]" Member="_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[2]" Member="_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[3]" Member="_3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[4]" Member="_4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[5]" Member="_5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[6]" Member="_6" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[7]" Member="_7" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[8]" Member="_8" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[9]" Member="_9" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[10]" Member="_10" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[11]" Member="_11" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[12]" Member="_12" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[13]" Member="_13" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[14]" Member="_14" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[15]" Member="_15" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[16]" Member="_16" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[17]" Member="_17" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[18]" Member="_18" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[19]" Member="_19" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[20]" Member="_20" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[21]" Member="_21" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[22]" Member="_22" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[23]" Member="_23" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[24]" Member="_24" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[25]" Member="_25" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[26]" Member="_26" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[27]" Member="_27" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[28]" Member="_28" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[29]" Member="_29" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[30]" Member="_30" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[31]" Member="_31" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TotalDays" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MonthId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Year" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Brach" Member="tbl_Braches">
+    <Type Name="tbl_Brach">
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BrName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="ContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="FaxNo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UUser" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_City" Member="tbl_Cities">
+    <Type Name="tbl_City">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StateId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CountryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Company_Account_Details" Member="tbl_Company_Account_Details">
+    <Type Name="tbl_Company_Account_Detail">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountPersonName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BankName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BranchName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BrachCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_CompanyDetail" Member="tbl_CompanyDetails">
+    <Type Name="tbl_CompanyDetail">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="ContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="FaxNo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CompanyLogo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FoundedYear" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Founder1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Country" Member="tbl_Countries">
+    <Type Name="tbl_Country">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CountryName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Emp_A_Details" Member="tbl_Emp_A_Details">
+    <Type Name="tbl_Emp_A_Detail">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountPersonName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BankName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BranchName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BrachCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Emp_Att_Master" Member="tbl_Emp_Att_Masters">
+    <Type Name="tbl_Emp_Att_Master">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MonthId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TotalDays" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="HolidayId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AbsentDays" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ActAttId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PresentDays" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LeaveId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_EmP_B_Detail" Member="tbl_EmP_B_Details">
+    <Type Name="tbl_EmP_B_Detail">
+      <Column Name="EmpBId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FatherName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FatherBackground" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FatherContactNo" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="FatherEmail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Emp_P_Details" Member="tbl_Emp_P_Details">
+    <Type Name="tbl_Emp_P_Detail">
+      <Column Name="EmpId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpLName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpMName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="EmpContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="EmpEmail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Country" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="State" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="City" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Qualification" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IdProof" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DOJ" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Err_Log" Member="tbl_Err_Logs">
+    <Type Name="tbl_Err_Log">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ErrMessage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StackTrace" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Holiday" Member="tbl_Holidays">
+    <Type Name="tbl_Holiday">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="HolidayDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="HolidayName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_IdProof" Member="tbl_IdProofs">
+    <Type Name="tbl_IdProof">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdProofName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IdProof" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Leave" Member="tbl_Leaves">
+    <Type Name="tbl_Leave">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LeaveType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_LeaveMaster" Member="tbl_LeaveMasters">
+    <Type Name="tbl_LeaveMaster">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LType" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LTotalDays" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LTotalMonths" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TotalLeave" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TotalRemainLeave" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LeaveApproveDates" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LeaveApprovalName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LeaveApprovalEmpId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Login_LOg" Member="tbl_Login_LOgs">
+    <Type Name="tbl_Login_LOg">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Mail" Member="tbl_Mails">
+    <Type Name="tbl_Mail">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FromMail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="[To]" Member="To" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AttachMent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Month_Master" Member="tbl_Month_Masters">
+    <Type Name="tbl_Month_Master">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MonthId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MonthName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Days" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Project" Member="tbl_Projects">
+    <Type Name="tbl_Project">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProjectName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProjectDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ProjectStartDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ProjectEndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ProjectRequirements" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HeadEmpName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HeadEmpId" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpNames" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Qualification" Member="tbl_Qualifications">
+    <Type Name="tbl_Qualification">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Qualification" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Role" Member="tbl_Roles">
+    <Type Name="tbl_Role">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_State" Member="tbl_States">
+    <Type Name="tbl_State">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CountryId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_SystemLog" Member="tbl_SystemLogs">
+    <Type Name="tbl_SystemLog">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Log]" Member="Log" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Task" Member="tbl_Tasks">
+    <Type Name="tbl_Task">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProjId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TaskAssignPersonHeadName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TaskAssignHeadEmpId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmpName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmpId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TaskDetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TaskAssignDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TaskCompletionDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TraceIP" Member="tbl_TraceIPs">
+    <Type Name="tbl_TraceIP">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TraceIP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_WebRole" Member="tbl_WebRoles">
+    <Type Name="tbl_WebRole">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblStructure" Member="tblStructures">
+    <Type Name="tblStructure">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="JrEmpId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="JrRoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SrEmpId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SrRoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SuperSrEmpId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SuperSrRoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSubBranch" Member="tblSubBranches">
+    <Type Name="tblSubBranch">
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SubBrName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Country" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="State" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="City" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="ContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="FaxNo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UUser" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
