@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="company_details.aspx.cs" Inherits="LInq_Payroll.company_details" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <script type="text/javascript">
+    <script type="text/javascript">
         function isNumeric(keyCode) {
             return ((keyCode >= 48 && keyCode <= 57) || keyCode == 8)
         }
@@ -69,7 +70,7 @@
 
 
     <div class="container-fluid">
-
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <br />
         <!-- /.row -->
         <div class="row">
@@ -80,27 +81,85 @@
                     <div class="row">
                         <div class="col-sm-12 col-xs-12">
                             <div role="form">
-                                  <div class="form-group">
-                                    <label for="exampleInputEmail1">Select Country</label>
-                                    <asp:DropDownList ID="DropDownList1" class="form-control" OnSelectedIndexChanged="ddlCountry_SelectedIndexChanged" AutoPostBack="true" runat="server">
-                                    </asp:DropDownList>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Company Name</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtCompanyName" placeholder="Enter Country Name" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Address Line 1</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtAdd1" placeholder="Enter Address Line 1" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Address Line 2</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtAdd2" placeholder="Enter Address Line 2" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Address Line 3</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtAdd3" placeholder="Enter Address Line 3" />
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Select Country</label>
                                     <asp:DropDownList ID="ddlCountry" class="form-control" OnSelectedIndexChanged="ddlCountry_SelectedIndexChanged" AutoPostBack="true" runat="server">
                                     </asp:DropDownList>
                                 </div>
+                                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                                     <Triggers>
+                                        <asp:AsyncPostBackTrigger ControlID="ddlCountry" />
+                                    </Triggers>
+                                    <ContentTemplate>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Select State</label>
+                                            <asp:DropDownList ID="ddlState" class="form-control" OnSelectedIndexChanged="ddlState_SelectedIndexChanged" AutoPostBack="true" runat="server">
+                                            </asp:DropDownList>
+                                        </div>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                    <Triggers>
+                                        <asp:AsyncPostBackTrigger ControlID="ddlState" />
+                                    </Triggers>
+                                    <ContentTemplate>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Selec City</label>
+                                            <asp:DropDownList ID="ddlcity" class="form-control" runat="server">
+                                            </asp:DropDownList>
+                                        </div>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Select State</label>
-                                    <asp:DropDownList ID="ddlState" class="form-control" runat="server">
-                                    </asp:DropDownList>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Selec City</label>
-                                   <asp:DropDownList ID="ddlcity" class="form-control" runat="server">
-                                    </asp:DropDownList>
+                                    <label for="exampleInputEmail1">Enter Postal Code</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtPostalCode" onkeydown="return IsPincode(event.keyCode);" placeholder="Enter Pincode" required />
                                 </div>
 
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Contact No1.</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtContactNo1" onkeydown="return IsMobileNumber(event.keyCode);" placeholder="Enter Mobile No 1" required />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Contact No2.</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtContactNo2" onkeydown="return IsMobileNumber(event.keyCode);" placeholder="Enter Contact No 2" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Fax No.</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtFax" onkeydown="return isNumeric(event.keyCode);" placeholder="Enter Fax No" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Email</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtEmail" onkeydown="return IsEmail(event.keyCode);" placeholder="Enter Email" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Company Logo</label>
+                                    <asp:FileUpload ID="FuImg" runat="server" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Founded Year</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtFYear" MaxLength="4" onkeydown="return isNumeric(event.keyCode);" placeholder="Enter Founded Year" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Founder Name</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="txtFounder1" MaxLength="50" placeholder="Enter Founder" required />
+                                </div>
                                 <asp:Button Text="Submit" OnClick="btnSubmit_Click" ID="btnSubmit" class="btn btn-success m-r-10" OnClientClick="return Validate" runat="server" />
                             </div>
                         </div>
@@ -108,49 +167,5 @@
                 </div>
             </div>
         </div>
-
-        <!-- /row -->
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="white-box">
-                    <h3 class="box-title m-b-0">All Countries </h3>
-                    <p class="text-muted m-b-30"></p>
-                    <div class="table-responsive">
-                        <table id="myTable" class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>City Name</th>
-                                    <th>State Name</th>
-                                    <th>Country Name</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <asp:Repeater ID="repData" OnItemCommand="repData_ItemCommand" runat="server">
-                                    <ItemTemplate>
-                                        <tr>
-                                            <td><%# Eval("City") %></td>
-                                            <td><%# Eval("State") %></td>
-                                            <td><%# Eval("CountryName") %></td>
-                                            <td>
-                                                <asp:LinkButton Text="Edit" CommandArgument='<%# Eval("Id") %>' class="btn btn-primary m-r-10" CommandName="Edit" runat="server" />
-                                            </td>
-                                            <td>
-                                                <asp:LinkButton Text="Delete" CommandArgument='<%# Eval("Id") %>' class="btn btn-danger m-r-10" CommandName="Delete" runat="server" />
-                                            </td>
-                                        </tr>
-                                    </ItemTemplate>
-                                </asp:Repeater>
-
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
     </div>
 </asp:Content>
