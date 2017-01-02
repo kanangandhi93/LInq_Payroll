@@ -108,6 +108,7 @@
     <Content Include="cdn.rawgit.com\google\code-prettify\master\loader\run_prettifyaf02.js" />
     <Content Include="cdnjs.cloudflare.com\ajax\libs\jszip\2.5.0\jszip.min.js" />
     <Content Include="city_manage.aspx" />
+    <Content Include="company_details.aspx" />
     <Content Include="country.aspx" />
     <Content Include="css\animate.css" />
     <Content Include="css\colors\blue.css" />
@@ -206,6 +207,7 @@
     <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.woff" />
     <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.woff2" />
     <Content Include="less\icons\weather-icons\font\weathericons-regular-webfontd41d.eot" />
+    <Content Include="role.aspx" />
     <Content Include="state.aspx" />
     <Content Include="www.youtube.com\watch7d1c.html" />
     <Content Include="plugins\bower_components\footable\css\fonts\footable.eot" />
@@ -500,6 +502,13 @@
     <Compile Include="city_manage.aspx.designer.cs">
       <DependentUpon>city_manage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="company_details.aspx.cs">
+      <DependentUpon>company_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company_details.aspx.designer.cs">
+      <DependentUpon>company_details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="country.aspx.cs">
       <DependentUpon>country.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -527,6 +536,13 @@
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="role.aspx.cs">
+      <DependentUpon>role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role.aspx.designer.cs">
+      <DependentUpon>role.aspx</DependentUpon>
+    </Compile>
     <Compile Include="state.aspx.cs">
       <DependentUpon>state.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
