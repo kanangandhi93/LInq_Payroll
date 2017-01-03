@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -19,7 +20,7 @@ namespace LInq_Payroll
                     BindCompany();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 throw;
@@ -71,12 +72,12 @@ namespace LInq_Payroll
                             AddressLine1 = txtAdd1.Text,
                             AddressLine2 = txtAdd2.Text,
                             AddressLine3 = txtAdd3.Text,
-                            City = ddlcity.SelectedValue,
+                            City = Convert.ToInt64(ddlcity.SelectedValue),
                             CompanyLogo = Image,
                             CompanyName = txtCompanyName.Text,
                             ContactNo1 = Convert.ToDecimal(txtContactNo1.Text),
                             ContactNo2 = Convert.ToDecimal(txtContactNo2.Text),
-                            Country = ddlCountry.SelectedValue,
+                            Country = Convert.ToInt64(ddlCountry.SelectedValue),
                             CreateDate = System.DateTime.Now,
                             CUser = 1,
                             EmailId = txtEmail.Text,
@@ -84,7 +85,7 @@ namespace LInq_Payroll
                             FoundedYear = Convert.ToInt64(txtFYear.Text),
                             Founder1 = txtFounder1.Text,
                             PostalCode = txtPostalCode.Text,
-                            State = ddlState.SelectedValue
+                            State = Convert.ToInt64(ddlState.SelectedValue)
                         };
                         db.tbl_CompanyDetails.InsertOnSubmit(company);
                         db.SubmitChanges();
@@ -97,11 +98,11 @@ namespace LInq_Payroll
                             AddressLine1 = txtAdd1.Text,
                             AddressLine2 = txtAdd2.Text,
                             AddressLine3 = txtAdd3.Text,
-                            City = ddlcity.SelectedValue,
+                            City = Convert.ToInt64(ddlcity.SelectedValue),
                             CompanyName = txtCompanyName.Text,
                             ContactNo1 = Convert.ToDecimal(txtContactNo1.Text),
                             ContactNo2 = Convert.ToDecimal(txtContactNo2.Text),
-                            Country = ddlCountry.SelectedValue,
+                            Country = Convert.ToInt64(ddlCountry.SelectedValue),
                             CreateDate = System.DateTime.Now,
                             CUser = 1,
                             EmailId = txtEmail.Text,
@@ -109,7 +110,7 @@ namespace LInq_Payroll
                             FoundedYear = Convert.ToInt64(txtFYear.Text),
                             Founder1 = txtFounder1.Text,
                             PostalCode = txtPostalCode.Text,
-                            State = ddlState.SelectedValue
+                            State = Convert.ToInt64(ddlState.SelectedValue)
                         };
                         db.tbl_CompanyDetails.InsertOnSubmit(company);
                         db.SubmitChanges();
@@ -119,7 +120,58 @@ namespace LInq_Payroll
 
                 if (btnSubmit.Text == "Update")
                 {
+                    tbl_CompanyDetail company = db.tbl_CompanyDetails.Single(x => x.Id == 1);
+                    if (FuImg.HasFile)
+                    {
+                        string str = FuImg.FileName;
+                        File.Delete(Server.MapPath(company.CompanyLogo));
+                        FuImg.PostedFile.SaveAs(Server.MapPath("~/company_logo/" + str));
+                        string Image = "~/company_logo/" + str.ToString();
 
+                        company.AddressLine1 = txtAdd1.Text;
+                        company.AddressLine2 = txtAdd2.Text;
+                        company.AddressLine3 = txtAdd3.Text;
+                        company.City = Convert.ToInt64(ddlcity.SelectedValue);
+                        company.CompanyLogo = Image;
+                        company.CompanyName = txtCompanyName.Text;
+                        company.ContactNo1 = Convert.ToDecimal(txtContactNo1.Text);
+                        company.ContactNo2 = Convert.ToDecimal(txtContactNo2.Text);
+                        company.Country = Convert.ToInt64(ddlCountry.SelectedValue);
+                        company.UpdateDate = System.DateTime.Now;
+                        company.UUser = 1;
+                        company.EmailId = txtEmail.Text;
+                        company.FaxNo = Convert.ToDecimal(txtFax.Text);
+                        company.FoundedYear = Convert.ToInt64(txtFYear.Text);
+                        company.Founder1 = txtFounder1.Text;
+                        company.PostalCode = txtPostalCode.Text;
+                        company.State = Convert.ToInt64(ddlState.SelectedValue);
+
+                        db.SubmitChanges();
+                        BindCompany();
+                    }
+                    else
+                    {
+
+                        company.AddressLine1 = txtAdd1.Text;
+                        company.AddressLine2 = txtAdd2.Text;
+                        company.AddressLine3 = txtAdd3.Text;
+                        company.City = Convert.ToInt64(ddlcity.SelectedValue);
+                        company.CompanyName = txtCompanyName.Text;
+                        company.ContactNo1 = Convert.ToDecimal(txtContactNo1.Text);
+                        company.ContactNo2 = Convert.ToDecimal(txtContactNo2.Text);
+                        company.Country = Convert.ToInt64(ddlCountry.SelectedValue);
+                        company.UpdateDate = System.DateTime.Now;
+                        company.UUser = 1;
+                        company.EmailId = txtEmail.Text;
+                        company.FaxNo = Convert.ToDecimal(txtFax.Text);
+                        company.FoundedYear = Convert.ToInt64(txtFYear.Text);
+                        company.Founder1 = txtFounder1.Text;
+                        company.PostalCode = txtPostalCode.Text;
+                        company.State = Convert.ToInt64(ddlState.SelectedValue);
+
+                        db.SubmitChanges();
+                        BindCompany();
+                    }
                 }
             }
             catch (Exception)
@@ -132,21 +184,70 @@ namespace LInq_Payroll
         private void BindCompany()
         {
             DBPayrollDataContext db = new DBPayrollDataContext();
-            var rr = from p in db.tbl_CompanyDetails
-                     select p;
-            if (rr.Count() > 0)
+            tbl_CompanyDetail company = db.tbl_CompanyDetails.Single(x => x.Id == 1);
+            if (company != null)
             {
-                txtAdd1.Text = rr.First().AddressLine1;
-                txtAdd2.Text = rr.First().AddressLine2;
-                txtAdd3.Text = rr.First().AddressLine3;
-                txtCompanyName.Text = rr.First().CompanyName;
-                txtContactNo1.Text = rr.First().ContactNo1.ToString();
-                txtContactNo2.Text = rr.First().ContactNo2.ToString();
-                txtEmail.Text = rr.First().EmailId.ToString();
-                txtFax.Text = rr.First().FaxNo.ToString();
-                txtFounder1.Text = rr.First().Founder1;
-                txtFYear.Text = rr.First().FoundedYear.ToString();
-                txtPostalCode.Text = rr.First().PostalCode.ToString();
+                BindCountries();
+                txtAdd1.Text = company.AddressLine1.ToString();
+                txtAdd2.Text = company.AddressLine2;
+                txtAdd3.Text = company.AddressLine3;
+                txtCompanyName.Text = company.CompanyName;
+                txtContactNo1.Text = company.ContactNo1.ToString();
+                txtContactNo2.Text = company.ContactNo2.ToString();
+                txtEmail.Text = company.EmailId.ToString();
+                txtFax.Text = company.FaxNo.ToString();
+                txtFounder1.Text = company.Founder1;
+                txtFYear.Text = company.FoundedYear.ToString();
+                txtPostalCode.Text = company.PostalCode.ToString();
+                ddlCountry.SelectedValue = company.Country.Value.ToString();
+                try
+                {
+                    var rr = from p in db.tbl_States
+                             where p.CountryId == Convert.ToInt64(ddlCountry.SelectedValue)
+                             select new { p.State, p.Id };
+                    if (rr.Count() > 0)
+                    {
+                        ddlState.DataSource = rr;
+                        ddlState.DataTextField = "State";
+                        ddlState.DataValueField = "Id";
+                        ddlState.DataBind();
+                        ddlState.Items.Insert(0, "Select State");
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('Sorry No Country Found.')</script>");
+                        Response.Redirect("state.aspx");
+                    }
+                }
+                catch (Exception)
+                {
+                    Response.Write("<script>alert('Oops Soomething went wrong.')</script>");
+                }
+                ddlState.SelectedValue = company.State.Value.ToString();
+                try
+                {
+                    var rr = from p in db.tbl_Cities
+                             where p.StateId == Convert.ToInt64(ddlState.SelectedValue)
+                             select new { p.City, p.Id };
+                    if (rr.Count() > 0)
+                    {
+                        ddlcity.DataSource = rr;
+                        ddlcity.DataTextField = "City";
+                        ddlcity.DataValueField = "Id";
+                        ddlcity.DataBind();
+                        ddlcity.Items.Insert(0, "Select City");
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('Sorry No Country Found.')</script>");
+                        Response.Redirect("city_manage.aspx");
+                    }
+                }
+                catch (Exception)
+                {
+                    Response.Write("<script>alert('Oops Soomething went wrong.')</script>");
+                }
+                ddlcity.SelectedValue = company.City.Value.ToString();
                 btnSubmit.Text = "Update";
             }
         }

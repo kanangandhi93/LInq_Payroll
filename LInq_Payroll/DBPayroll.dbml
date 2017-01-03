@@ -95,34 +95,6 @@
       <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.tbl_CompanyDetail" Member="tbl_CompanyDetails">
-    <Type Name="tbl_CompanyDetail">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="ContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
-      <Column Name="ContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
-      <Column Name="FaxNo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
-      <Column Name="EmailId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="CompanyLogo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="FoundedYear" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="Founder1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Founder2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Founder3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Founder4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Founder5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.tbl_Country" Member="tbl_Countries">
     <Type Name="tbl_Country">
       <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -465,6 +437,34 @@
       <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
       <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_CompanyDetail" Member="tbl_CompanyDetails">
+    <Type Name="tbl_CompanyDetail">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Country" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="State" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="City" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="ContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="FaxNo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CompanyLogo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FoundedYear" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Founder1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Founder5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
