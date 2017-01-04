@@ -108,6 +108,7 @@
     <Content Include="cdn.rawgit.com\google\code-prettify\master\loader\run_prettifyaf02.js" />
     <Content Include="cdnjs.cloudflare.com\ajax\libs\jszip\2.5.0\jszip.min.js" />
     <Content Include="city_manage.aspx" />
+    <Content Include="company_brach.aspx" />
     <Content Include="company_details.aspx" />
     <Content Include="country.aspx" />
     <Content Include="css\animate.css" />
@@ -501,6 +502,13 @@
     </Compile>
     <Compile Include="city_manage.aspx.designer.cs">
       <DependentUpon>city_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company_brach.aspx.cs">
+      <DependentUpon>company_brach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company_brach.aspx.designer.cs">
+      <DependentUpon>company_brach.aspx</DependentUpon>
     </Compile>
     <Compile Include="company_details.aspx.cs">
       <DependentUpon>company_details.aspx</DependentUpon>

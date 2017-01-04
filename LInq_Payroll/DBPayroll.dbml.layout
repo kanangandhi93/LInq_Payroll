@@ -8,12 +8,6 @@
         <elementListCompartment Id="2b769eb4-cb63-4346-b1ea-6379538a724c" absoluteBounds="0.765, 1.21, 1.9700000000000002, 8.1337483723958321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="2b6c6726-dc27-4622-bf5d-a3088d0af83a" absoluteBounds="3.75, 0.75, 2, 4.4631168619791666">
-      <DataClassMoniker Name="/DBPayrollDataContext/tbl_Brach" />
-      <nestedChildShapes>
-        <elementListCompartment Id="516990c7-c0c3-4168-a2a0-1d961f7f01cf" absoluteBounds="3.765, 1.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="680a5ace-62d8-4665-8d0b-e69ae3044fb9" absoluteBounds="6.75, 0.75, 2, 1.5785953776041666">
       <DataClassMoniker Name="/DBPayrollDataContext/tbl_City" />
       <nestedChildShapes>
@@ -168,6 +162,12 @@
       <DataClassMoniker Name="/DBPayrollDataContext/tbl_CompanyDetail" />
       <nestedChildShapes>
         <elementListCompartment Id="e711dddc-72a8-46eb-98be-d2eca599108d" absoluteBounds="3.2649999999999997, 10.46, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab538969-22fe-496f-8641-c652e1539dd8" absoluteBounds="3.875, 0.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/DBPayrollDataContext/tbl_Brach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7dc7f937-02fc-41c7-8788-6d39b9943d6a" absoluteBounds="3.8899999999999997, 1.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
