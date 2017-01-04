@@ -146,6 +146,7 @@
     <Content Include="less\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.svg" />
     <Content Include="less\icons\themify-icons\fonts\themify9f24.svg" />
     <Content Include="less\icons\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="master.Master" />
     <Content Include="ApplicationInsights.config">
@@ -536,6 +537,13 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -581,6 +589,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\" />
     <Folder Include="company_logo\" />
   </ItemGroup>
   <ItemGroup>
