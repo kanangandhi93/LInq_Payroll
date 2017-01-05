@@ -51,10 +51,11 @@
 
                                 <div class="panel-footer">
                                     <div class="clearfix">
-                                        <a href="extras-registration.html" class="btn btn-default pull-left">Register</a>
+                                        <%--<a href="extras-registration.html" class="btn btn-default pull-left">Register</a>--%>
                                         <%--<a href="extras-login.html" class="btn btn-primary pull-right">Login</a>--%>
 
-                                        <asp:LinkButton ID="btnLogin" class="btn btn-primary pull-right" OnClick="btnLogin_Click" runat="server">Login</asp:LinkButton>
+                                        <%--<asp:LinkButton ID="btnLogin" class="btn btn-primary pull-right" OnClick="btnLogin_Click" runat="server">Login</asp:LinkButton>--%>
+                                        <asp:Button ID="btnLogin" class="btn btn-primary pull-right" OnClick="btnLogin_Click" runat="server" Text="Login" />
                                     </div>
                                 </div>
 
@@ -62,10 +63,10 @@
                         </div>
                     </div>
 
-                    <div class="text-center">
+                    <%--  <div class="text-center">
                         <a href="#" class="btn btn-label btn-social btn-facebook mb20"><i class="fa fa-fw fa-facebook"></i>Connect with Facebook</a>
                         <a href="#" class="btn btn-label btn-social btn-twitter mb20"><i class="fa fa-fw fa-twitter"></i>Connect with Twitter</a>
-                    </div>
+                    </div>--%>
                 </div>
             </div>
         </div>

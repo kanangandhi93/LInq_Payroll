@@ -16,7 +16,12 @@ namespace LInq_Payroll
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            DBPayrollDataContext db = new DBPayrollDataContext();
+            tbl_Emp_P_Detail login = db.tbl_Emp_P_Details.Single(x => x.UserName == txtUserName.Text && x.Password == txtPassword.Text);
+            if (login != null)
+            {
+                Session["Login"] = login.EmpId;
+            }
         }
     }
 }
