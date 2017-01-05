@@ -600,6 +600,12 @@
       <DependentUpon>DBPayroll.dbml</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\enc_dec\enc_dec.csproj">
+      <Project>{7e04ce49-2428-4b82-86f8-0664855e2ef6}</Project>
+      <Name>enc_dec</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

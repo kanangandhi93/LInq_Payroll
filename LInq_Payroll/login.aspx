@@ -53,7 +53,7 @@
                                     <div class="clearfix">
                                         <%--<a href="extras-registration.html" class="btn btn-default pull-left">Register</a>--%>
                                         <%--<a href="extras-login.html" class="btn btn-primary pull-right">Login</a>--%>
-
+                                        <asp:Label Text="" style="color:red;" ID="lblMessage" class="pull-left" runat="server" />
                                         <%--<asp:LinkButton ID="btnLogin" class="btn btn-primary pull-right" OnClick="btnLogin_Click" runat="server">Login</asp:LinkButton>--%>
                                         <asp:Button ID="btnLogin" class="btn btn-primary pull-right" OnClick="btnLogin_Click" runat="server" Text="Login" />
                                     </div>
