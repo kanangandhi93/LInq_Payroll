@@ -140,41 +140,6 @@
       <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.tbl_Emp_P_Details" Member="tbl_Emp_P_Details">
-    <Type Name="tbl_Emp_P_Detail">
-      <Column Name="EmpId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="EmpName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="EmpLName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="EmpMName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="EmpContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
-      <Column Name="EmpContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
-      <Column Name="EmpEmail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Country" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="State" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="City" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Photo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Qualification" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="IdProof" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="DOJ" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
-      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.tbl_Err_Log" Member="tbl_Err_Logs">
     <Type Name="tbl_Err_Log">
       <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -465,6 +430,43 @@
       <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
       <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Emp_P_Details" Member="tbl_Emp_P_Details">
+    <Type Name="tbl_Emp_P_Detail">
+      <Column Name="EmpId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpLName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpMName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpContactNo1" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="EmpContactNo2" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="EmpEmail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Country" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="State" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="City" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Qualification" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IdProof" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DOJ" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SubBrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BrId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UUser" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IdProofName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IdProofNo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

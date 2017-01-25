@@ -12,7 +12,10 @@ namespace LInq_Payroll
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //if (Session["Login"] == null || Session["RoleId"] == null)
+            //{
+            //    Response.Redirect("login.aspx");
+            //}
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
